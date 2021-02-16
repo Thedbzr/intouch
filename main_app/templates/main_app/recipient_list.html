@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="Rmain">
+    <h1>Recipient List</h1>
+    {% for recipient in recipient_list %}
+    <div class="recipients card">
+        <div class="card-content">
+            <h3 class="card-title">{{ recipient.name }}</h3>
+            <p><span>Number:</span>{{ recipient.ph_number }}</p>
+            <p><span>Email:</span> {{ recipient.email }}</p>
+        </div>
+        <div class="dltBtn">
+            <a class="btn btn-primary" href="{% url 'recipient_delete' recipient.id %}">Delete</a>
+        </div>
+    </div>
+    {% endfor %}
+    {% endblock %}
+</div>

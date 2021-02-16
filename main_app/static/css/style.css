@@ -8,7 +8,363 @@ main {
   flex: 1 0 auto;
 }
 
-footer.page-footer {
-  padding-top: 0;
+.top-content .carousel-item {
+    height: 100vh;
+    min-height: 400px;
+}
+ 
+.top-content .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header.navbar-fixed {
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
+}
+.landing1 {
+  height: 110vh;
+  padding: 4%;
+}
+.l1Header {
+  font-family: 'Montserrat', sans-serif;
+}
+.l1title {
+  margin-top: 0;
+  margin-bottom: 10vmin;
+  text-align: center;
+}
+.l1title > h1{
+ font-weight: bolder;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 15% 2%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+}
+.landingPanel2{
+  height: 50vh;
+  padding: 10vmin;
+  margin-top: 5%;
+}
+.landingPanel2{
+  height: 50vh;
+  padding: 10vmin;
+  padding-top: 3vmin;
+}
+.landingPanel3{
+  height: 60vh;
+  padding: 10vmin;
+}
+.landingPanel4{
+  height: 150vh;
+  padding: 10%;
+}
+.landingPanel2g{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+}
+.landingPanel3g{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+}
+.landingPanel4g{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  text-align: center;
+  grid-gap: 0 0;
+  justify-items: center;
+}
+.l4header {
+  text-align: center;
+}
+
+.panelImg1left {
+  max-width: 85%;
+  height: auto;
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+.panelImg1right {
+  max-width: 85%;
+  height: auto;
+  float: right;
+}
+body{ height:100vh; margin:0; }
+
+header{ 
+  min-height:50px; background:whitesmoke;
+} 
+footer{ 
+  background: #F6F7F8;
+  margin-top: 10vmin;
+}
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
+header{
+  height: 4%;
+}
+main {
+  margin-top: 4.5%;
+}
+body > header > nav > div > a > img {
+  padding: 0;
+  width: 6vmin;
+  height: auto;
+}
+.navbar-brand {
+  margin-left: .5rem;
+  margin-right: .5rem; 
+}
+.carousel-caption {
+  bottom: 4rem;
+}
+.flex-container {
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.companies {
+  margin: 5px;
+  height: 45vmin;
+}
+
+body {
+  line-height: 1;
+}
+.landingPanle5{
+  margin-top: 10%;
+
+}
+.left {
+  float: left;
+}
+.right {
+ float: right;
+}
+
+body > footer > div > div > div > a > img{
+  padding: 0;
+}
+body > footer > div > div > div > a {
+  text-align: center;
+  display: block;
+  padding-top: 1%;
+}
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+.card {
+  display: flex;
+  margin: 10vmin;
+}.card-deck {
+  display: flex;
+}
+.signup {
+  text-align: center;
+  background-color: #E8EBE4;
+}
+.login {
+  text-align: center;
+  background-color: #E8EBE4;
+}
+.login > h1 {
+  margin-bottom: 3vmin;
+}
+form {
+  align-self: center;
+}
+body > main > div > form > input.btn {
+  background-color: #0275d8;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  margin: 2vmin 2vmin 1vmin 2vmin;
+  cursor: pointer;
+}
+body > main > div > form > table > tbody > tr > th {
+  vertical-align:middle;
+}
+body > main > div > form > table > tbody > tr {
+  height: 10vmin;
+}
+#footimg {
+  width: 3%;
+  margin-top: 2vmin;
+}
+body > footer > div {
+  display: block;
+  text-align: center;
+}
+.profile {
+  text-align: center;
+}
+body > main > .profile > form > table > tbody > tr {
+  margin: 2vmin;
+  height: 7vmin;
+}
+body > main > div.container > div > div > div.card-body > ul > li {
+  margin: 2vmin;
+}
+.recipient {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+body > main > div.recipient > form {
+  display: inline-grid;
+}
+.inlineBtn {
+  display: inline;
+}
+
+.recipients {
+  padding: 2vmin;
+  text-transform: capitalize;
+  margin: 3vmin;
+}
+body > main > div > div > p > span {
+ font-weight: bold;
+}
+body > main > div > div > span > p > span{
+ font-weight: bold;
+}
+.Rmain {
+  padding: 10vmin;
+}
+body > main > div > div > span > p{
+ text-transform: capitalize;
+}
+body > main > div > div > p {
+  text-transform: capitalize;
+}
+#compose-title {
+  text-align: center;
+}
+#compose-message {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#compose-message > p {
+  text-align: left;
+  text-decoration: underline;
+}
+#compose-message > input {
   text-align: right;
+  color: blue
+}
+#new-recipient {
+  display: flex;
+  flex-direction: column;
+}
+#recipient {
+  border: none;
+  background-color: lightgray;
+  width: 70%;
+}
+#past-messages {
+  text-align: center;
+  text-decoration: underline;
+}
+#inlineBtn > input {
+  display: inline;
+  float: right;
+}
+#msgtable {
+  text-align: center;
+  align-items: center;
+  border-spacing: 2vmin 0;
+}
+thead {
+  text-decoration: underline;
+}
+body > main > section.landing1 > div > div.grid-container > div > p {
+  line-height: 1.5;
+}
+body > main > section.landingPanel2 > div > div > p {
+  line-height: 2;
+}
+body > main > section.landingPanel3 > div > div > p {
+  line-height: 2;
+}
+.info {
+  line-height: 2 !important;
+}
+
+.msgContainer {
+  padding: 5vmin;
+  margin-bottom: 5vmin;
+}
+.grid-container2{
+  display: grid;
+  margin: 0 10% 0 10%;
+  grid-template-columns: 40% 40%;
+  text-align: center;
+  justify-content: center;
+}
+#rline {
+  margin: 3% 25% 3% 25%;
+}
+body > main > table > tbody > tr > td {
+  text-align: center;
+}
+.tblcontainer{
+margin: 0;
+display: flex;
+justify-content: center;
+}
+#msgtable > tbody > tr > td {
+  padding: 1vmin 3vmin ;
+}
+.l1titleabout {
+  text-emphasis: center;
+}
+.l1titleabout > h1 {
+  text-emphasis: left;
+  line-height: 1;
+  margin-bottom: 2vmin;
+}
+.landing1about {
+  height: auto;
+  padding: 10vmin;
 }
